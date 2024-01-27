@@ -1,0 +1,90 @@
+
+.home-container{
+    text-align: center; /* จัดเนื้อหาตามแนวนอน (horizontal) ให้อยู่กลาง */
+    margin: 0 auto; /* จัดเนื้อหาตามแนวตั้ง (vertical) ให้อยู่กลาง */
+    font-size: 200%;
+    img{
+      width: 100%; /* รูปภาพจะเต็มพื้นที่ของพ่อคุณ */
+      height: auto; /* ความสูงของรูปภาพจะถูกปรับให้พอดีกับกว้าง */
+    }
+
+    
+}
+
+.home-container h2 {
+        color: white; 
+}
+
+.row-home-2 {
+    display: flex;
+    justify-content: space-around; /* จัดวางอยู่ตรงกลาง */
+    align-items: center; /* จัดให้ข้อมูลแนวตั้งตรงกลาง */
+  }
+  
+  .colunm-home-2 {
+    flex: 1; /* ให้ข้อมูลขยายเต็มพื้นที่ */
+    margin: 10px; /* ระยะห่างระหว่างข้อมูล */
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    h2{
+       color: black; 
+    }
+  }
+
+  .main{
+    display: flex;
+    font-family: "Inter", sans-serif;
+  }
+
+  .container{
+    display: flex;
+  }
+
+
+  .menuContainer{
+    display: flex;
+    width: 250 px;
+    padding: 5px 20px;
+    border-right: 2px 
+  
+  
+  }
+  
+  .contentContainer{
+    padding: 5px 20px;
+    width: 100%;
+  }
+
+  .home{
+
+    display: flex;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+  
+    .box{
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #f2f2f2;
+    }
+  
+
+    .box1{
+      grid-column: span 1;
+      grid-row: span 3;
+
+    }
+
+      .box3{
+        grid-column: span 3;
+        grid-row: span 2;
+
+       
+  
+    }
+  
+  
+
+  }
+  

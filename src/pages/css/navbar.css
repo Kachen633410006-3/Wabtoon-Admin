@@ -1,0 +1,11 @@
+.navbar{
+    width: 100%;
+    padding: 20xp;
+    display: flex;
+    align-items: center;
+
+}
+.span{
+   display: flex;
+}
+

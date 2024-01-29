@@ -2,10 +2,12 @@ import React from 'react';
 import './css/Home.css';
 import { Outlet, } from 'react-router-dom';
 import ChartBox from './ChartBox';
-import ChartBox2 from './BarChartBox';
+import BarChartBox from './BarChartBox';
 import ChartBox3 from './ChartBox3';
 import Navbar from './Navbar';
 import Menu from './Menu';
+
+
 
 function Home() {
   const isLoggedIn = localStorage.getItem('loggedInUsername');
@@ -35,7 +37,7 @@ function Home() {
 
 
             <div className="box box2">
-              <ChartBox2 />
+              <BarChartBox />
             </div>
 
 
